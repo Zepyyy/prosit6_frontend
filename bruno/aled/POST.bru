@@ -1,0 +1,19 @@
+meta {
+  name: POST
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:5001/api/items
+  body: json
+  auth: none
+}
+
+body:json {
+  {              
+    "name": "test",      
+    "email": "test@test.com",
+    "age": "test"
+  }
+}
